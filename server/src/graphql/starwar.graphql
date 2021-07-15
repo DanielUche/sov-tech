@@ -1,0 +1,13 @@
+type StarWar {
+  name: String
+  gender: String
+  height: String
+  mass: String
+  homeworld: String
+}
+
+type Query {
+  getCount: Int
+  getPeople(page: Int!): [StarWar!]
+  getPerson(name: String!): StarWar
+}
